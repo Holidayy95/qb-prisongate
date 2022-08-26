@@ -23,3 +23,4 @@ You will need to create your own image for the item.
 
 * [ox_doorlock](https://github.com/overextended/ox_doorloc)
 * [qb-target](https://github.com/qbcore-framework/qb-target)
+* [Hacking Minigame](https://github.com/Jesper-Hustad/NoPixel-minigame/tree/main/fivem-script/hacking)
