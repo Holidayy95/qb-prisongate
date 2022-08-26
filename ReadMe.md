@@ -8,8 +8,8 @@ Just drag and drop into resources folder and ensure.
 
 ## You must create the doors named below
 
-pem-gate1 - First Gate
-pem-gate2 - Second Gate
+* pem-gate1 - First Gate
+* pem-gate2 - Second Gate
 
 ## Item
 
