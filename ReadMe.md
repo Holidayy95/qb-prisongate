@@ -21,5 +21,5 @@ You will need to create your own image for the item.
 
 ## Dependency
 
-[ox_doorlock](https://github.com/overextended/ox_doorloc)
-[qb-target](https://github.com/qbcore-framework/qb-target)
+* [ox_doorlock](https://github.com/overextended/ox_doorloc)
+* [qb-target](https://github.com/qbcore-framework/qb-target)
