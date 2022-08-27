@@ -43,67 +43,62 @@ end)
 
 RegisterNetEvent('qb-prisongate:client:door1', function()
 
-    exports['hacking']:OpenHackingGame(15, 4, 3, function(Success)
-        if Success then
-            QBCore.Functions.Notify("Gate hacked! should be opening!", 'success')
-            TriggerServerEvent('qb-prisongate:client:opendoor1')
+    if Config.DoorLock == "qb" then
+        exports['hacking']:OpenHackingGame(15, 4, 3, function(Success)
+            if Success then
+                QBCore.Functions.Notify("Gate hacked! should be opening!", 'success')
+                TriggerServerEvent('qb-doorlock:server:updateState', Config.Gate1, false, false, false, true)
 
-            if math.random(1,100) < 80 then
-                local data = exports['cd_dispatch']:GetPlayerInfo()
-                TriggerServerEvent('cd_dispatch:AddNotification', {
-                    job_table = {'police'}, 
-                    coords = data.coords,
-                    title = '10-36 - Prison Break In',
-                    message = 'A '..data.sex..' is attempting to break into Pembroke Prison', 
-                    flash = 0,
-                    unique_id = tostring(math.random(0000000,9999999)),
-                    blip = {
-                        sprite = 237, 
-                        scale = 1.0, 
-                        colour = 0,
-                        flashes = true, 
-                        text = 'Alarm - Prison Break In',
-                        time = (5*60*1000),
-                        sound = 1,
-                    }
-                })
+                if math.random(1,100) < 80 then
+                    -- Add your police alert here
+                end
+            else
+                QBCore.Functions.Notify("Hack Failed, the police may have been alerted", 'error')
             end
-        else
-            QBCore.Functions.Notify("Hack Failed, the police may have been alerted", 'error')
-        end
-    end)
+        end)
+    elseif Config.DoorLock == "ox" then
+        exports['hacking']:OpenHackingGame(15, 4, 3, function(Success)
+            if Success then
+                QBCore.Functions.Notify("Gate hacked! should be opening!", 'success')
+                TriggerServerEvent('qb-prisongate:client:opendoor1')
+
+                if math.random(1,100) < 70 then
+                    -- Add your police alert here
+                end
+            else
+                QBCore.Functions.Notify("Hack Failed, the police may have been alerted", 'error')
+            end
+        end)
+    end
 end)
 
 RegisterNetEvent('qb-prisongate:client:door2', function()
 
-    exports['hacking']:OpenHackingGame(15, 4, 3, function(Success)
-        if Success then
-            QBCore.Functions.Notify("Gate hacked! should be opening!", 'success')
-            TriggerServerEvent('qb-prisongate:client:opendoor2')
+    if Config.DoorLock == "qb" then
+        exports['hacking']:OpenHackingGame(15, 4, 3, function(Success)
+            if Success then
+                QBCore.Functions.Notify("Gate hacked! should be opening!", 'success')
+                TriggerServerEvent('qb-doorlock:server:updateState', Config.Gate2, false, false, false, true)
 
-            if math.random(1,100) < 80 then
-                local data = exports['cd_dispatch']:GetPlayerInfo()
-                TriggerServerEvent('cd_dispatch:AddNotification', {
-                    job_table = {'police'}, 
-                    coords = data.coords,
-                    title = '10-36 - Prison Break In',
-                    message = 'A '..data.sex..' is attempting to break into Pembroke Prison', 
-                    flash = 0,
-                    unique_id = tostring(math.random(0000000,9999999)),
-                    blip = {
-                        sprite = 237, 
-                        scale = 1.0, 
-                        colour = 0,
-                        flashes = true, 
-                        text = 'Alarm - Prison Break In',
-                        time = (5*60*1000),
-                        sound = 1,
-                    }
-                })
+                if math.random(1,100) < 80 then
+                    -- Add your police alert here
+                end
+            else
+                QBCore.Functions.Notify("Hack Failed, the police may have been alerted", 'error')
             end
+        end)
+    elseif Config.DoorLock == "ox" then
+        exports['hacking']:OpenHackingGame(15, 4, 3, function(Success)
+            if Success then
+                QBCore.Functions.Notify("Gate hacked! should be opening!", 'success')
+                TriggerServerEvent('qb-prisongate:client:opendoor1')
 
-        else
-            QBCore.Functions.Notify("Hack Failed, the police may have been alerted", 'error')
-        end
-    end)
+                if math.random(1,100) < 70 then
+                    -- Add your police alert here
+                end
+            else
+                QBCore.Functions.Notify("Hack Failed, the police may have been alerted", 'error')
+            end
+        end)
+    end
 end)
