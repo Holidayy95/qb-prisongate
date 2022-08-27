@@ -7,7 +7,6 @@ author 'Holiday'
 
 shared_scripts {
 	'@ox_lib/init.lua',
-    'config.lua',
 }
 
 client_scripts {
@@ -17,6 +16,7 @@ client_scripts {
     '@PolyZone/CircleZone.lua',
     '@PolyZone/ComboZone.lua',
 	'client/main.lua',
+    'config.lua',
 }
 
 server_scripts {
