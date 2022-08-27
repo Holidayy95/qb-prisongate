@@ -1,12 +1,12 @@
 # qb-prisongate
 
-qb-prisongate creates the 3 gates and a fence-gate at the prison to be hackable/lockpickable. (ox_doorlock only)
+qb-prisongate creates the 3 gates and a fence-gate at the prison to be hackable/lockpickable. (ox_doorlock and qb-doorlock only)
 
-## Install
+## Install for ox_doorlock
 
 Just drag and drop into resources folder and ensure.
 
-## You must create the doors named below
+## You must create the doors named below (ox_doorlock only)
 
 * pem-gate1 - First Gate
 * pem-gate2 - Second Gate
@@ -17,7 +17,9 @@ Just drag and drop into resources folder and ensure.
 
 You will need to create your own image for the item.
 
+# Install for qb-doorlock
 
+You still need the item above, however, you just need to grab your own names for gates and add them to the config.
 
 ## Dependency
 
