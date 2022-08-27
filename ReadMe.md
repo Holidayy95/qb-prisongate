@@ -21,6 +21,8 @@ You will need to create your own image for the item.
 
 You still need the item above, however, you just need to grab your own names for gates and add them to the config.
 
+##IF YOU ARE USING QB-DOORLOCK, REMOVE THE SHARED SECTION FROM THE FXMANIFEST
+
 ## Dependency
 
 * [ox_doorlock](https://github.com/overextended/ox_doorloc) or [qb-doorlock](https://github.com/qbcore-framework/qb-doorlock)
