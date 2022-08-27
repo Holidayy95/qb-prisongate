@@ -23,6 +23,6 @@ You still need the item above, however, you just need to grab your own names for
 
 ## Dependency
 
-* [ox_doorlock](https://github.com/overextended/ox_doorloc)
+* [ox_doorlock](https://github.com/overextended/ox_doorloc) or [qb-doorlock](https://github.com/qbcore-framework/qb-doorlock)
 * [qb-target](https://github.com/qbcore-framework/qb-target)
 * [Hacking Minigame](https://github.com/Jesper-Hustad/NoPixel-minigame/tree/main/fivem-script/hacking)
