@@ -1,6 +1,6 @@
 # qb-prisongate
 
-qb-prisongate creates the 3 gates and a fence-gate at the prison to be hackable/lockpickable. (ox_doorlock and qb-doorlock only)
+qb-prisongate creates the 2 gates and a fence-gate at the prison to be hackable/lockpickable. (ox_doorlock and qb-doorlock only)
 
 ## Install for ox_doorlock
 
